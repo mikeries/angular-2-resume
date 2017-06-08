@@ -1,0 +1,813 @@
+﻿
+html {
+	font-size: 16px;
+}
+body {
+	font-size: 62.5%;
+    background-color: lightgray;
+}
+.borderbtn {
+	border-bottom: 1px solid #900d0d;
+}
+.borderleft {
+	border-left: 1px solid #900d0d;
+}
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0; 
+}
+.aside_el {
+	text-align: right;
+	padding-right: 5px;
+}
+.aside_el  h2 {
+	font: 2.9em 'Arvo', serif; /* 29px/10 */
+	line-height: 0.8em;
+	color: #464646;
+	font-weight: normal;
+	margin-bottom: 3px;
+	margin-top: 0;
+}
+.aside_el  h5 {
+	font: 1.35em 'Droid Sans', sans-serif; /* 14px/10 */
+	line-height: 1.2em;
+	color: #0099e8;
+	font-weight: normal;
+}
+
+.par_el {
+	padding-left: 30px;
+	position: relative;
+}
+.par_el p {
+	font-family: 'Droid Sans', sans-serif; /* 14px/10 */
+	font-size: 1.4em;
+	line-height: 1.8em;
+	color: #8e8d8d;
+	text-align: left;
+}
+
+.page {
+	padding-bottom: 80px;
+}
+
+.wrapper {
+	/* Positioning & Display */
+	max-width: 940px;
+    padding: 0;
+    padding-bottom:80px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 55px;
+	margin-bottom: 20px;
+	position: relative;
+	/* Color */
+	background: #fff;
+	-webkit-box-shadow: 0 0 20px rgba(3, 3, 3, 0.3);
+	-moz-box-shadow:    0 0 20px rgba(3, 3, 3, 0.3);
+	box-shadow:         0 0 20px rgba(3, 3, 3, 0.3);
+}
+
+.panel-title {
+    font-size: inherit;
+}
+
+.panel-group .panel {
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+.panel-heading {
+    position: relative;
+}
+
+/*-----------------------------*\
+	$NAVIGATION
+\*-----------------------------*/
+
+.navbar,
+navbar-default {
+	height: 55px;
+    width:100%;
+    max-width: 940px;
+	font-family: 'Droid Sans', serif;
+	z-index: 5000;
+    position: relative;
+    margin-bottom:0;
+	/* Color */
+	background: #464646;
+	-webkit-box-shadow: 0 2px 4px rgba(3, 3, 3, 0.2);
+	-moz-box-shadow:    0 2px 4px rgba(3, 3, 3, 0.2);
+	box-shadow:         0 2px 4px rgba(3, 3, 3, 0.2);
+}
+
+.navbar ul {
+	text-align: center;
+	margin: 0; padding: 0;
+}
+
+.navbar li, .navbar-nav li {
+	/* Positioning & Display */
+	vertical-align: middle; 
+	margin: 0;
+	margin-left: -2px;
+	padding: 0 18px;
+	display: inline-block;
+}
+.navbar-nav a {
+	/* Text */
+	font-size: 1.6em; /* 16px/10 */
+	line-height: 5.3125em;  /* 85px/16px */
+	color: #0099e8;
+	/* Positioning & Display */
+	top: 0;
+	position: relative;
+	margin: 0; padding: 0;
+    border-top: 10px solid transparent;
+	/* Animation */
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+}
+
+.navbar-default .navbar-nav>li.active>a,
+.navbar-default .navbar-nav>li.active>a:focus 
+{
+	color: #747474;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a:hover
+ {
+	text-decoration: none;
+	color: #747474;
+    background-color: lightgray;
+}
+ul.navbar-nav a.active {
+    border-top: 10px solid #0099e8;
+}
+
+.navbar, .navbar-nav {
+  display: inline-block;
+  float: none;
+  margin: 0 auto;
+}
+
+.navbar, .navbar-collapse {
+    text-align: center;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 4px rgba(3, 3, 3, 0.2);
+    -moz-box-shadow:    0 2px 4px rgba(3, 3, 3, 0.2);
+    box-shadow:         0 2px 4px rgba(3, 3, 3, 0.2);
+}
+
+.navbar-toggle {
+    margin-top: 7px;
+    margin-bottom:7px;
+    padding: 8px 10px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    margin-bottom: 55px;
+}
+
+#aftermenuspace {
+    height:55px;
+}
+
+/*-----------------------------*\
+	$HEADER
+\*-----------------------------*/
+
+.site_header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: relative;
+	text-align: center;
+}
+.site_header h1 {
+	/* Text */
+	font: 5.5em 'Arvo', serif; /* 60px/10 */
+	line-height: 0.66666666em; /* 40px/60px */
+	font-weight: bold;
+	color: #464646;
+	/* Positioning & Display */
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+	z-index: 2;
+}
+#logoline {
+	text-align: center;
+}
+.site_header h1:before,
+.site_header h1:after {
+    border-top: 1px solid #900d0d;
+    content: " ";
+	/* Positioning & Display */
+    display: block;
+    height: 1px;
+    width: 25%;
+    position: absolute;
+    left: 0;
+    top: 1em;
+	z-index: 1;
+}
+.site_header h1:after {
+   right: 0;  
+   left: auto; 
+}
+.site_header h2 {
+	font: 3.1em 'Arvo', serif; /* 21px/10 */
+	font-weight: normal;
+	color: #616161;
+	margin: -4px 0 10px 0;
+}
+.site_header h3 {
+	font: 2.0em 'Droid Sans', sans-serif; /* 25px/10 */
+	line-height: 1.2em; /* 30px/25px */
+	font-weight: 400;
+	color: #a4a5a6;
+	margin-right: 8%;
+	margin-left: 8%;
+}
+
+/*-----------------------------*\
+	$ABOUT ME
+\*-----------------------------*/
+
+.about_me {
+	margin-top: 20px;
+}
+
+.about_me article p:last-child {
+	margin-bottom: -3px;
+}
+
+.upbtn {
+	/* Positioning & Display */
+	border-radius: 50%;
+	width: 48px;
+	height: 48px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	/* Color */
+	background-color: #0093d0;
+	/* Elemants */
+	cursor: pointer;
+	margin: 0 auto;
+	z-index: 10000;
+}
+.upbtn span {
+	color: white; 
+	line-height: 48px; 
+	text-align: right; 
+	font-size: 30px; /* 30/14 */
+	position: relative;
+	bottom: 7px;
+	left: 7px;
+} 
+
+/* contact info */
+.cont_info {
+	padding-left: 5px;
+	width: 95%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.info {
+	margin-top: 20px;
+}
+.info ul li {
+    height:50px;
+	padding-bottom: 20px;
+}
+.info ul li span {
+	/* Text */
+	font-size: 2em;  /* 24px/10 */
+	color: #222222;
+	/* Positioning & Display */
+	margin: 0; padding: 0;
+	margin-top: -4px;
+    padding-right:10px;
+	position: relative;
+    float:left;
+}
+.info ul li span img {
+    margin-left:-4px;
+    margin-top: -15px;
+}
+.info ul li a, .info ul li a:hover {
+	font-size: 1.35em; /* 14px/10 */
+	color: #959595;
+	text-decoration: none;
+	line-height: 0;
+}
+
+/*-----------------------------*\
+    PROJECTS
+\*-----------------------------*/
+#projects {
+    margin-top: 30px;
+}
+
+/*-----------------------------*\
+	$MY EXPERTISE
+\*-----------------------------*/
+
+.expertise {
+	margin-top: 30px;
+}
+.skill_level {
+    margin-top:20px;
+	padding: 0 12px 0 7px;
+}
+.skill_level h4{
+	/* Text */
+	font: 1.4em 'Droid Sans', sans-serif; /* 14px/10 */
+	line-height: 1.071428em; /* 15px/14px */
+	color: #464646;
+	text-align: center;
+	font-weight: bold;
+	/* Positioning & Display */
+	margin-top: -10px;
+}
+
+.progress {
+    margin-left:15px;
+    margin-right:15px;
+}
+
+/*-----------------------------*\
+	$EXPERIENCE
+\*-----------------------------*/
+
+.experience {
+	margin-top: 30px;
+}
+.experience p, .education p, .education li {
+	color: #8e8d8d;
+}
+
+.period  {
+	/* Positioning & Display */
+	position: absolute;
+    top:10px;
+	right: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	/* Text */
+	font: 1.6em 'Droid Sans', sans-serif; /* 16px/10 */
+	color: white;
+	font-weight: 400;
+	/* Color */
+	background-color: #0099e8;
+}
+.bigspacing {
+	padding-left: 155px;
+}
+.par_el header h2 {
+	font-family: 'Arvo', serif;
+	font-size: 2.3em; /* 23px/10 */
+	font-weight: normal;
+	line-height: 0.8em;
+	color: #464646;
+	margin-top: 0;
+}
+.par_el header h3 {
+	font: 1.8em 'Droid Sans', sans-serif; /* 18px/10 */
+	line-height: 1.2em;
+	color: #8e8e8e;
+	padding-bottom: 0;
+}
+.in_spacing {
+	position: relative;
+	padding-bottom: 15px;
+	padding-right: 10px;
+}
+.in_spacingbottom {
+	position: relative;
+	padding-bottom: 0;
+	padding-right: 10px;
+}
+
+
+/*-----------------------------*\
+	$EDUCATION
+\*-----------------------------*/
+
+.education {
+	margin-top: 30px;
+}
+.education ul,
+.education li {
+    list-style:circle;
+    margin:5px;
+    font: 1.1em 'Droid Sans', sans-serif;
+    line-height:1.3em;
+}
+
+/*-----------------------------*\
+	$FOOTER
+\*-----------------------------*/
+
+#contact {
+	margin: 0 18px;
+}
+
+.siteFooter {
+	border-top: 1px solid #d4d4d4;
+	background: #f0f4f2;
+	padding-top: 60px;
+	padding-bottom: 60px;
+    margin-left: 0;
+    margin-right:0;
+}
+
+.contact_form {
+	padding: 40px;
+    padding-bottom:60px;
+	background: #dfdcdf;
+	margin-left: 33px;
+	margin-right: 15px;
+    font-size: 1.4em;
+}
+
+.contact_form label {
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 1.2em;
+}
+
+.contact_form input {
+	/* Positioning & Display */
+	width: 100%;
+	height: 30px;
+	margin-bottom: 15px;
+	padding-left: 15px;
+	/* Elemants */
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border: 1px solid #e4e2e2;
+}
+.contact_form textarea {
+	/* Positioning & Display */
+	width: 100%;
+	margin-bottom: 15px;
+	padding-left: 15px;
+	padding-top: 12px;
+	/* Elemants */
+	border: 1px solid #e4e2e2;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder  {
+	color: #a6abae;
+	font: 14px 'Droid Sans', sans-serif;
+}
+input:-moz-placeholder , textarea:-moz-placeholder{ /* Firefox 18- */
+	color: rgba(3, 3, 3, 0.3);
+	font: 14px 'Droid Sans', sans-serif;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {  /* Firefox 19+ */
+	color: #a6abae;
+	font: 14px 'Droid Sans', sans-serif;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {  
+	color: #a6abae;
+	font: 14px 'Droid Sans', sans-serif;
+}
+
+.send-button, .send-button:hover {
+	font: 1.4em 'Droid Sans', sans-serif;
+	font-weight: normal;
+	letter-spacing: -0.5px;
+	color: white;
+	text-decoration: none;
+	margin-right: -20px;
+	padding: 10px 35px;
+	display: inline-block;
+	position: relative;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	cursor:pointer;
+	background-color: #0093d0;
+}
+
+.contact_form ul {
+	margin-left: 5px;
+	margin-top: -15px;
+}
+.contact_form li {
+	list-style-type: none;
+	color: red;
+	margin-left: -3px;
+	margin-top: -5px;
+}
+ 
+.error {
+    display:block;
+    color: red;
+  }
+
+.form-group .has-error {
+    background-color: #fbcbcb;
+}
+
+@media only screen and (max-width: 950px) {
+	.container {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (max-width: 870px) {
+    .navbar-nav li, .navbar li {
+        padding: 0 10px;
+    }
+	.site_header h1:before,
+	.site_header h1:after {
+		width: 20%;
+	}
+	.cont_info {
+		padding-left: 0;
+	}
+    .info>ul>li>a {
+        font-size: 1.1em;
+    }
+	.site_header h3 {
+		font: 2em 'Droid Sans', sans-serif; /* 25px/10 */
+	}
+	.upbtnwrapp {
+		display: block;
+	}
+
+    .skill_level h4 {
+		font: 1.3em 'Droid Sans', sans-serif; /* 14px/10 */
+		line-height: 1.071428em; /* 15px/14px */
+		margin-top: -10px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	#contact {
+		padding-top: 20px;
+	}
+
+    #expertise, #projects {
+        margin-top:20px;
+    }
+	.site_nav a {
+		font-size: 1.6em; /* 16px/10 */
+		line-height: 5.3125em;  /* 85px/16px */
+	}
+	.borderleft {
+		border-left: none;
+	}
+
+    .bigspacing {
+        padding-left: 100px;
+    }
+	.site_header {
+		padding-top: 17px;
+		padding-bottom: 25px;
+	}
+	.site_header h1 {
+		font: 4em 'Arvo', serif; /* 60px/10 */
+		line-height: 0.66666666em; /* 40px/60px */
+		font-weight: bold;
+		color: #464646;
+	}
+	.site_header h2 {
+		font: 1.9em 'Arvo', serif;
+	}
+	.site_header h3 {
+		font: 1.7em 'Droid Sans', sans-serif;
+		line-height: 1.2em;
+	}
+	.aside_el {
+		text-align: center;
+		padding-right: 0;
+		margin-bottom: 30px;
+	}
+	.aside_el h5 {
+		margin-top: 15px;
+	}
+	.par_el {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	/* contact info */
+	.cont_info {
+		padding-left: 0;
+		margin-top: 40px;
+	}
+	.info {
+		padding-top: 20px;
+		width: 200px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.skill_level {
+		padding: 0 18px 0 14px;
+	}
+	.about_me,
+    .expertise,
+    .experience,
+    .education
+     {
+		margin-top: 20px;
+	}
+
+	footer {
+		padding-top: 10px;
+		padding-bottom: 50px;
+	}
+	.contact_form {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+
+@media only screen and (max-width: 630px) {  /****************/
+	.site_nav a {
+		font-size: 1.4em; /* 16px/10 */
+		line-height: 6.071428571428571em;  /* 85px/14px */
+	}
+	.site_header {
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+	.site_header h1 {
+		font: 3em 'Arvo', serif; /* 60px/10 */
+		line-height: 0.66666666em; /* 40px/60px */
+		font-weight: bold;
+		color: #464646;
+	}
+	.site_header h2 {
+		font: 1.7em 'Arvo', serif; /* 21px/10 */
+	}
+	.site_header h3 {
+		font: 1.6em 'Droid Sans', sans-serif; /* 25px/10 */
+		line-height: 1.2em; /* 30px/25px */
+	}
+	.aside_el  h2 {
+		font: 2em 'Arvo', serif; /* 29px/10 */
+		line-height: 0.8em;
+		margin-bottom: -10px;
+	}
+	.aside_el  h5 {
+		font: 1.35em 'Droid Sans', sans-serif; /* 14px/10 */
+		line-height: 1.1em; /* 14px/14px */
+	}
+	.cont_info {
+		margin-top: 25px;
+	}
+		
+    .about_me,
+    .expertise,
+	.experience, 
+    .education, 
+    .portfolio {
+		margin-top: 20px;
+	}
+    	
+	.par_el header h2 {
+		font: 1.6em 'Arvo',serif;
+		margin-top: 3px;
+		padding-top: 2px;
+		
+	}
+	.par_el header h3 {
+		font: 1.4em 'Droid Sans',sans-serif;
+		padding-bottom: 0;
+	}
+
+}
+@media only screen and (max-width: 540px) {
+	.site_nav {
+		height: 163px;
+		padding-top: 10px;
+	}
+	.site_nav ul {
+		display: block;
+	}
+	.site_nav li {
+		display: block;
+		border-top: none;
+		margin-left: 0;
+		padding: 0;
+	}
+	.site_nav a {
+		font-size: 1.5em; /* 15px/10 */
+		line-height: 1.7em;  /* 130px/15px */
+		display: block;
+		top: 0;
+	}
+
+	.cont_info {
+		margin-top: 20px;
+	}
+
+	.info ul li {
+		padding-bottom: 10px;
+	}
+	.aside_el {
+		margin-bottom: 20px;
+	}
+
+	.bigspacing {
+		padding-left: 0;
+	}
+	.period {
+		font: 600 1.4em 'Droid Sans',sans-serif;
+		right: 20px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	#contact {
+		padding-top: 15px;
+	}
+	.site_header {
+		padding-top: 0;
+		padding-bottom: 10px;
+	}
+	.site_header h1 {
+		font: bold 2.6em 'Arvo',serif;
+	}
+	.site_header h2 {
+		font: 1.5em 'Arvo', serif;
+	}
+	.site_header h3 {
+		font: 1.3em 'Droid Sans', sans-serif;
+		line-height: 1.2em; /* 30px/25px */
+	}
+	.aside_el  h2 {
+		font: 1.8em 'Arvo', serif; /* 29px/10 */
+		line-height: 0.8em;
+		margin-bottom: -10px;
+	}
+	.aside_el  h5 {
+		font: 1.5em 'Droid Sans', sans-serif; /* 14px/10 */
+		line-height: 1.1em; /* 14px/14px */
+	}
+	.par_el p {
+		font: 1.3em 'Droid Sans', sans-serif; /* 14px/10 */
+		color: #8e8d8d;
+		text-align: left;
+	}
+	.par_el header h2 {
+		font: 1.5em 'Arvo',serif;
+		margin-top: 3px;
+		padding-top: 2px;
+	}
+	.par_el header h3 {
+		font: 1.3em 'Droid Sans',sans-serif;
+		margin-top: -10px;
+	}
+	.period {
+		font: 600 1.3em 'Droid Sans',sans-serif;
+        margin-left:20px;
+	}
+
+	.page {
+		padding-bottom: 40px;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.contact_form {
+		padding: 30px;
+        padding-bottom:40px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+    .send-button, .send-button:hover {
+        font-size:1.1em;
+        padding:5px;
+    }
+}
+@media only screen and (max-width: 360px) {
+	.site_header h1 {
+		font: bold 2em 'Arvo',serif;
+	}
+	.period {
+		font-size: 1.1em;
+	}
+	.par_el header h2 {
+		font: 1.4em 'Arvo',serif;
+		margin-top: 3px;
+		padding-top: 2px;
+	}
+    .skill_level h4 {
+        font-size: 1.1em;
+    }
+
+}

@@ -1,0 +1,126 @@
+﻿<section class="row projects" id="projects">
+    <aside class="col-sm-3 aside_el">
+        <h2>Projects</h2>
+        <h5>relevant projects<br /> that I've done</h5>
+    </aside>
+    <div class="col-sm-9">
+        <div class="row">
+            <accordion [closeOthers]="true" class="col-sm-12  borderleft par_el in_spacing">
+                <accordion-group>
+                    <header accordion-heading>
+                        <h2>My Angular2 Resume Page</h2>
+                        <h3>A rewrite of the resume project using Angular2 and Typescript.</h3>
+                    </header>
+                    <p>
+                        Using Visual Studio 2015, the goal of this project was to get some hands-on practice using Angular2 and Typescript.  It demonstrates
+                        simple Angular2 routing and uses Bootstrap CSS but no JQuery.  The project features responsive layout, Angular2 UI components and simple event 
+                        and data binding.
+                    </p>
+                    <p>
+                        <a href="http://michaelries.net/angular">http://michaelries.net/angular</a>
+                    </p>
+                </accordion-group>
+                <accordion-group>
+                    <header accordion-heading>
+                        <h2>My JQuery Resume Page</h2>
+                        <h3>Everyone needs an online resume!</h3>
+                    </header>
+                    <p>
+                        The primary purpose of this project is to serve as my resume and get me hired, but developing it has also given me additional
+                        experience with CSS, HTML, Bootstrap, and JQuery.  The site features an elegant navbar, smooth-scroll navigation, responsive layout and a functional
+                        contact form with client-side validation.
+                    </p>
+                    <p>
+                        <a href="http://michaelries.net">http://michaelries.net</a>
+                    </p>
+                </accordion-group>
+                <accordion-group>
+                    <header accordion-heading>
+                        <h2>Pooch Positive Training</h2>
+                        <h3>Storefront for dog training company</h3>
+                    </header>
+                    <p>
+                        The site features user account management, a customer contact form,  a client management application, including drag-and-drop dog thumbnail
+                        cropping/resizing and upload. Created using C#, MVC and .NET, JQuery, Bootstrap, Entity Framework, Knockout, Razor, and JSON.
+                    </p>
+                    <p>
+                        <a href="https://github.com/mikeries/PoochPositiveTraining"><img src="/app/img/GitHub-Mark-32px.png" /> https://github.com/mikeries/ PoochPositiveTraining</a>
+                    </p>
+                    <p>
+                        <a href="http://poochpositivetraining.us-east-2.elasticbeanstalk.com"><img src="/app/img/PPT Icon.png" /> http://poochpositivetraining.us-east-2.elasticbeanstalk.com</a>
+                    </p>
+                </accordion-group>
+                <accordion-group>
+                    <header accordion-heading>
+                        <h2>Empire</h2>
+                        <h3>Multi-player space war game built on the Universal Windows Platform</h3>
+                    </header>
+                    <p>
+                        A sandbox for learning and practicing software design patterns, C#/.NET, networking, XAML, serialization, etc.
+                        A very early single-player release can be found at: <a href="https://github.com/mikeries/Empire/releases">https://github.com/mikeries/Empire/releases</a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/mikeries/Empire"><img src="/app/img/GitHub-Mark-32px.png" /> https://github.com/mikeries/Empire</a>
+                    </p>
+                </accordion-group>
+                <accordion-group>
+                    <header accordion-heading>
+                        <h2>FD-SOI Epi Smoothing App</h2>
+                        <h3>VB-Excel application for SunEdison Semiconductor</h3>
+                    </header>
+                    <p>
+                        A tool to improve performance of the epi-smoothing operation.  The application queries the production SQL database to retrieve
+                        thickness map data for the incoming product, and calculates optimum process settings. Product capability and yield improved by 40%
+                        on a wafer-by-wafer level while simultaneously simplifying operations.
+                    </p>
+                </accordion-group>
+                <accordion-group>
+                    <header accordion-heading>
+                        <h2>SOI Production Dispatcher</h2>
+                        <h3>VB-Excel application for SunEdison Semiconductor</h3>
+                    </header>
+                    <p>
+                        Applies <a href="http://www.lean-manufacturing-japan.com/scm-terminology/dbr-drum-buffer-rope-theory.html">drum-buffer-rope theory</a> to
+                        optimize product flow through the manufacturing process, shortening production cycles, improving efficiency. The application queries the SQL
+                        database for work-in-progress and prioritizes each production lot at each step based on shipment schedules and statistically determined cycle
+                        times for the relevant production flows. It also provides a UI for each operation listing the product lots in the order they are to be processed.
+                    </p>
+                </accordion-group>
+                <accordion-group>
+                    <header accordion-heading>
+                        <h2>AITools</h2>
+                        <h3>A collection of VB-Excel macros for SunEdison Semiconductor</h3>
+                    </header>
+                    <p>
+                        I was a significant contributor to AITools, a collection of macros used around the world for collecting and analyzing particle data produced
+                        by our surface inspection systems.  The tools provide the ability to map, filter, stack maps, match defects from inspection-to-inspection, and
+                        determine at what point in the production process a defect was first detected.
+                    </p>
+                </accordion-group>
+                <accordion-group>
+                    <header accordion-heading>
+                        <h2>Cluster Review Application</h2>
+                        <h3>VB-Excel application for SunEdison Semiconductor</h3>
+                    </header>
+                    <p>
+                        An application to rapidly review and classify of defects for root cause identification and improved yields. Reads the defect coordinates
+                        from the wafer inspection system and creates a graph for each wafer.  The user selects defect clusters to zoom in for a closer look, classifies the
+                        defect type then saves the result to a database.  The database can then be used to analyze distributions of defect types across products
+                        and processes.
+                    </p>
+                </accordion-group>
+                <accordion-group>
+                    <header accordion-heading>
+                        <h2>Defect Image Database</h2>
+                        <h3>VB application for SunEdison Semiconductor</h3>
+                    </header>
+                    <p>
+                        A VB-Access script populated a database with defect images and associated metadata. A VB-Excel UI allowed users to search the production
+                        SQL database for specific products, time periods, tools, etc. and review the associated defect images, enabling more rapid defect identification
+                        and elimination.
+                    </p>
+                </accordion-group>
+            </accordion>
+        </div>
+    </div>
+</section>

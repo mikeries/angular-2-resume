@@ -1,0 +1,41 @@
+﻿
+<nav class="navbar navbar-default" [class.fixed]="navIsFixed">
+    <div>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" (click)="isCollapsed = !isCollapsed">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" [collapse]="isCollapsed" (click)="isCollapsed=true">
+            <ul class="nav navbar-nav">
+                <li><a routerLink="about" routerLinkActive="active">About Me</a></li>
+                <li><a routerLink="skills" routerLinkActive="active">Skills</a></li>
+                <li><a routerLink="projects" routerLinkActive="active">Projects</a></li>
+                <li><a routerLink="experience" routerLinkActive="active">Experience</a></li>
+                <li><a routerLink="education" routerLinkActive="active">Education</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div *ngIf="navIsFixed" (click)="scrollToTop()" class="upbtn"><span class="glyphicon glyphicon-arrow-up"></span></div>
+<div id="aftermenuspace" *ngIf="navIsFixed"></div>
+<header class="site_header borderbtn">
+
+    <div id="logoline"><h1>Michael Ries</h1></div>
+    <h2>SOFTWARE DEVELOPER</h2>
+    <h3>
+        Engineering professional with 20 years experience successfully tackling difficult cost and yield challenges,
+        leading crossfunctional, multinational product development teams, and achieving results leading to revenue
+        exceeding $200,000,000.
+    </h3>
+    <h3>
+        Passionate software enthusiast with intermediate-level understanding of various object-oriented and web
+        programming technologies, with an emphasis on the Microsoft platform.
+    </h3>
+</header>
+
+
+<router-outlet></router-outlet>
+
