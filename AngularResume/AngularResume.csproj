@@ -82,7 +82,9 @@
     <Content Include="systemjs.config.extras.js" />
     <Content Include="systemjs.config.js" />
     <Content Include="tsconfig.json" />
-    <Content Include="app\Files\Michael Ries Resume 12-13-16.pdf" />
+    <Content Include="app\Files\Online Resume - 8-1-17.pdf" />
+    <Content Include="NOTES.md" />
+    <None Include="Properties\PublishProfiles\michaelries - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

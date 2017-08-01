@@ -317,6 +317,20 @@ ul.navbar-nav a.active {
     margin-top: 30px;
 }
 
+#projects ul {
+    font-family: "Droid Sans",sans-serif;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    color: #8e8d8d;
+    text-align: left;
+    column-count: 1;
+    margin: 0 5%;
+}
+
+#projects li {
+    list-style: square;
+}
+
 /*-----------------------------*\
 	$MY EXPERTISE
 \*-----------------------------*/
@@ -324,35 +338,41 @@ ul.navbar-nav a.active {
 .expertise {
 	margin-top: 30px;
 }
-.skill_level {
-    margin-top:20px;
-	padding: 0 12px 0 7px;
-}
-.skill_level h4{
-	/* Text */
-	font: 1.4em 'Droid Sans', sans-serif; /* 14px/10 */
-	line-height: 1.071428em; /* 15px/14px */
-	color: #464646;
-	text-align: center;
-	font-weight: bold;
-	/* Positioning & Display */
-	margin-top: -10px;
+
+.expertise ul {
+    font-family: "Droid Sans",sans-serif;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    color: #8e8d8d;
+    text-align: left;
+    column-count: 4;
+    margin: 0 5%;
 }
 
-.progress {
-    margin-left:15px;
-    margin-right:15px;
-}
 
 /*-----------------------------*\
 	$EXPERIENCE
 \*-----------------------------*/
 
-.experience {
+#experience {
 	margin-top: 30px;
 }
-.experience p, .education p, .education li {
+#experience p, .education p, .education li {
 	color: #8e8d8d;
+}
+
+#experience ul {
+    font-family: "Droid Sans",sans-serif;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    color: #8e8d8d;
+    text-align: left;
+    column-count: 1;
+    margin: 0 5%;
+}
+
+#experience li {
+    list-style: square;
 }
 
 .period  {
@@ -634,6 +654,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 		margin-left: 15px;
 		margin-right: 15px;
 	}
+
+    .expertise ul {
+        column-count: 3;
+    }
 }
 
 @media only screen and (max-width: 630px) {  /****************/
@@ -780,7 +804,12 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 	.page {
 		padding-bottom: 40px;
 	}
+
+    .expertise ul {
+        column-count: 2;
+    }
 }
+
 @media only screen and (max-width: 420px) {
 	.contact_form {
 		padding: 30px;
