@@ -37,3 +37,4 @@ C:\Users\Mike\Documents\Visual Studio 2015\Projects\AngularResume - old\AngularR
 C:\Users\Mike\Documents\Visual Studio 2015\Projects\AngularResume - old\AngularResume\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Mike\Documents\Visual Studio 2015\Projects\AngularResume - old\AngularResume\obj\Debug\AngularResume.dll
 C:\Users\Mike\Documents\Visual Studio 2015\Projects\AngularResume - old\AngularResume\obj\Debug\AngularResume.pdb
+C:\Users\Mike\Documents\Visual Studio 2015\Projects\AngularResume - old\AngularResume\obj\Debug\AngularResume.csprojResolveAssemblyReference.cache
